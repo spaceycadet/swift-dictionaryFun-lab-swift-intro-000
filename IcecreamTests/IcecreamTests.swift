@@ -147,7 +147,7 @@ class IcecreamTests: XCTestCase {
         let flavor = testIcecream.flavor(forPerson: "Travis")
         XCTAssertNotNil(flavor, "Travis has been added to the dictionary, we should be able to retrieve his flavor.")
     }
-
+    
     
     // 9.
     func testAttendeeList() {
@@ -157,5 +157,5 @@ class IcecreamTests: XCTestCase {
         
         XCTAssertEqual(list, expectedList, "Your list is not correct. Make sure that you're not adding a new line after the last person")
     }
-
+    
 }
