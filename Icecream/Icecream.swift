@@ -99,7 +99,7 @@ class Icecream {
     
     // 8.
     
-    func add(person:String, flavor:String) -> Bool {
+    func add(person:String, withFlavor flavor:String) -> Bool {
         /// I need help understanding line 15. (I put the rest together myself.) In my head, row 15 says: Do this if whatever String passed in as the Person argument doesn't match any of the keys in the favoriteFlavorsOfIceCream dictionary.
         if favoriteFlavorsOfIceCream[person] == nil {
             favoriteFlavorsOfIceCream[person] = flavor

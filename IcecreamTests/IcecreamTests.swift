@@ -143,19 +143,19 @@ class IcecreamTests: XCTestCase {
     func testAddPersonWithTravis() {
         let isAddedToParty = testIcecream.add(person: "Travis", withFlavor: "Strawberry")
         XCTAssertTrue(isAddedToParty, "Travis is new to the party, the function should return true.")
-
+        
         let flavor = testIcecream.flavor(forPerson: "Travis")
         XCTAssertNotNil(flavor, "Travis has been added to the dictionary, we should be able to retrieve his flavor.")
     }
-
-
+    
+    
     // 9.
     func testAttendeeList() {
         let expectedList = "Deniz likes Natural Vanilla\nJim likes Natural Vanilla\nJoe likes Peanut Butter and Chocolate\nSophie likes Mexican Chocolate\nSusan likes Cookies 'N' Cream\nTim likes Natural Vanilla\nTom likes Mexican Chocolate"
-
+        
         let list = testIcecream.attendeeList()
-
+        
         XCTAssertEqual(list, expectedList, "Your list is not correct. Make sure that you're not adding a new line after the last person")
     }
-
+    
 }
